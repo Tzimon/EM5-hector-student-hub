@@ -23,8 +23,8 @@ No build step and no dependencies – it is plain HTML, CSS and JavaScript.
 **Option 2 – local web server** (recommended):
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/Tzimon/EM5-hector-student-hub.git
+cd EM5-hector-student-hub
 python -m http.server 8080
 ```
 
