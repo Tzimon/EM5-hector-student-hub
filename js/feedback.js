@@ -80,6 +80,12 @@
   // ------------------------------------------------------------------ Layout
   function renderLayout() {
     root.innerHTML = `
+      <nav class="subnav" aria-label="Feedback sections">
+        <a href="#feedback-overview">${HS.icon('trending-up')}Overview</a>
+        <a href="#grades">${HS.icon('message-square')}Grades &amp; Feedback</a>
+        <a href="#improvement-plan">${HS.icon('target')}Improvement Plan</a>
+      </nav>
+
       <section class="section" id="feedback-overview">
         <div class="grid grid-3 fb-stats" data-slot="stats"></div>
         <div class="fb-overview-grid">

@@ -66,6 +66,11 @@
       </optgroup>`).join('');
 
     root.innerHTML = `
+      <nav class="subnav" aria-label="Projects and Calendar sections">
+        <a href="#calendar">${HS.icon('calendar')}Calendar</a>
+        <a href="#project-overview">${HS.icon('briefcase')}Project Overview</a>
+      </nav>
+
       <div class="cal-layout">
         <div class="card cal-card" id="calendar">
           <div class="cal-toolbar">

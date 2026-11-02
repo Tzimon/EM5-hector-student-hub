@@ -193,6 +193,12 @@
     TABS.forEach((tab) => {
       if (HS.modules[tab]) HS.modules[tab].init(document.querySelector(`[data-tab-root="${tab}"]`));
     });
+    document.querySelectorAll('.subnav a').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        HS.navigate(a.getAttribute('href'));
+      });
+    });
   }
 
   function showTab(tab) {
