@@ -1,36 +1,5 @@
 /* Function 1 – Digital Learning Platform. Uses tokens from styles.css only. */
 
-/* ---------------------------------------------------------------- In-page navigation */
-.subnav {
-  position: sticky;
-  top: calc(var(--header-h) + 12px);
-  z-index: 20;
-  display: flex;
-  gap: 4px;
-  width: max-content;
-  max-width: 100%;
-  margin: -56px auto 32px;
-  padding: 6px;
-  overflow-x: auto;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-pill);
-  box-shadow: var(--shadow);
-}
-.subnav a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 16px;
-  border-radius: var(--radius-pill);
-  color: var(--text-muted);
-  font-size: var(--fs-sm);
-  font-weight: 700;
-  white-space: nowrap;
-}
-.subnav a:hover { background: var(--kit-green-50); color: var(--kit-green-dark); text-decoration: none; }
-.subnav svg { width: 15px; height: 15px; }
-
 .label { display: block; margin-bottom: 8px; font-size: var(--fs-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
 .kicker { font-size: var(--fs-sm); font-weight: 700; color: var(--kit-green); }
 .subsection + .subsection { margin-top: 28px; }
@@ -337,7 +306,6 @@
   .partner-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
-  .subnav { position: static; margin: -40px 0 24px; width: 100%; }
   .profile-stats { grid-template-columns: repeat(2, 1fr); }
   .partner-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .card-row { grid-auto-columns: 82%; }

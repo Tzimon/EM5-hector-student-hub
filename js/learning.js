@@ -840,12 +840,6 @@
         state.sort = e.target.value;
         renderCatalogue();
       });
-      root.querySelectorAll('.subnav a').forEach((a) => {
-        a.addEventListener('click', (e) => {
-          e.preventDefault();
-          HS.navigate(a.getAttribute('href'));
-        });
-      });
     }
   };
 })();
