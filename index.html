@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Hub – KIT HECTOR School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/learning.css">
+  <link rel="stylesheet" href="css/calendar.css">
+  <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+
+  <!-- ============================================================ Header -->
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="#learning" aria-label="HECTOR School Student Hub – home">
+        <span class="brand-mark">KIT</span>
+        <span class="brand-text">
+          <strong>HECTOR School</strong>
+          <span>Student Hub</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#learning" data-tab-link="learning"><i data-icon="book-open"></i>Learning</a>
+        <a href="#projects" data-tab-link="projects"><i data-icon="calendar"></i>Projects &amp; Calendar</a>
+        <a href="#feedback" data-tab-link="feedback"><i data-icon="message-square"></i>Feedback</a>
+      </nav>
+
+      <div class="topbar-right">
+        <span class="today-chip" title="Sample date used by this prototype">
+          <i data-icon="clock"></i><span id="today-label"></span>
+        </span>
+        <button class="icon-btn" id="notifications-btn" type="button" aria-label="Notifications">
+          <i data-icon="bell"></i><span class="dot"></span>
+        </button>
+        <button class="user-chip" id="user-chip" type="button" aria-label="Open learner profile">
+          <span class="avatar" id="user-avatar"></span>
+          <span class="user-chip-text">
+            <strong id="user-name"></strong>
+            <span id="user-program"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================== Tab: Learning (Function 1) -->
+    <section class="tab-panel" id="tab-learning" data-tab-panel="learning" aria-labelledby="learning-title" hidden>
+      <div class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Digital Learning Platform</span>
+          <h1 id="learning-title">Grow your skills, your way</h1>
+          <p class="subline">Self-paced HECTOR School courses and official certifications – funded by your master thesis education budget.</p>
+        </div>
+      </div>
+      <div class="page-body">
+        <div class="container" data-tab-root="learning">
+          <div class="placeholder">
+            <i data-icon="layers"></i>
+            <h3>Digital Learning Platform</h3>
+            <p>This area is built in Step 1 (function1_knowledge.md).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== Tab: Projects & Calendar (Function 2) -->
+    <section class="tab-panel" id="tab-projects" data-tab-panel="projects" aria-labelledby="projects-title" hidden>
+      <div class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Projects &amp; Calendar</span>
+          <h1 id="projects-title">Your modules and company projects</h1>
+          <p class="subline">All course sessions and project weeks of your Master in Engineering and Management at a glance.</p>
+        </div>
+      </div>
+      <div class="page-body">
+        <div class="container" data-tab-root="projects">
+          <div class="placeholder">
+            <i data-icon="layers"></i>
+            <h3>Projects &amp; Calendar</h3>
+            <p>This area is built in Step 2 (function2_projects.md).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== Tab: Feedback (Function 3) -->
+    <section class="tab-panel" id="tab-feedback" data-tab-panel="feedback" aria-labelledby="feedback-title" hidden>
+      <div class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Feedback &amp; Development</span>
+          <h1 id="feedback-title">Feedback that moves you forward</h1>
+          <p class="subline">Structured feedback from lecturers, peers and mentors – turned into concrete improvement actions.</p>
+        </div>
+      </div>
+      <div class="page-body">
+        <div class="container" data-tab-root="feedback">
+          <div class="placeholder">
+            <i data-icon="layers"></i>
+            <h3>Feedback &amp; Improvement Plan</h3>
+            <p>This area is built in Step 3 (function3_feedback.md).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 KIT HECTOR School · Student Hub</span>
+      <span>High-fidelity prototype – all data is dummy data</span>
+    </div>
+  </footer>
+
+  <div id="modal-root"></div>
+  <div id="drawer-root"></div>
+  <div class="toast-root" id="toast-root" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/learning.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+</html>
